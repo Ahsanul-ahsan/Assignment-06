@@ -1,0 +1,68 @@
+[
+  {
+    "id": "prod-001",
+    "name": "Starter Plan",
+    "description": "Essential tools for individuals and hobbyists getting started.",
+    "price": 0,
+    "period": "monthly",
+    "tag": "Free",
+    "tagType": "new",
+    "features": ["3 Projects", "Basic Analytics", "Community Support"],
+    "icon": "https://i.ibb.co.com/qY25CGTx/design-tool.png"
+  },
+  {
+    "id": "prod-002",
+    "name": "Pro Builder",
+    "description": "Advanced features for professionals and growing freelancers.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Unlimited Projects", "Custom Domains", "Priority Support", "Advanced SEO"],
+    "icon": "https://i.ibb.co.com/j99Zksnc/operation.png"
+  },
+  {
+    "id": "prod-003",
+    "name": "Enterprise Suite",
+    "description": "Full-scale solutions for large teams and organizations.",
+    "price": 999,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "bestseller",
+    "features": ["SSO Integration", "Dedicated Account Manager", "Custom Contracts", "24/7 Phone Support"],
+    "icon": "https://i.ibb.co.com/WvzG9T9w/portfolio.png"
+  },
+  {
+    "id": "prod-004",
+    "name": "Growth Hack",
+    "description": "Specific marketing tools to scale your user base quickly.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "new",
+    "features": ["A/B Testing", "Email Automation", "Heatmaps", "API Access"],
+    "icon": "https://i.ibb.co.com/ghD1Nsx/social-media.png"
+  },
+  {
+    "id": "prod-005",
+    "name": "Lifetime License",
+    "description": "One-time payment for permanent access to all core features.",
+    "price": 499,
+    "period": "one-time",
+    "tag": "Limited Deal",
+    "tagType": "popular",
+    "features": ["Lifetime Updates", "No Monthly Fees", "Offline Access", "Standard Support"],
+    "icon": "https://i.ibb.co.com/VYnkgPr9/camera-8775444-1.png"
+  },
+  {
+    "id": "prod-006",
+    "name": "Design Pro",
+    "description": "Specialized toolkit for UI/UX designers and creative leads.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New Arrival",
+    "tagType": "new",
+    "features": ["1000+ Assets", "Cloud Collaboration", "Version History", "Export to Figma"],
+    "icon": "https://i.ibb.co.com/RpywMfVT/writing-2327400-1.png"
+  }
+]
