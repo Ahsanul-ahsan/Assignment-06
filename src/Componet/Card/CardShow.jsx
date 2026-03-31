@@ -21,12 +21,12 @@ const CardShow = ({ item, cartDeatils, setCartDeatils }) => {
                         </div>
                         <div>
                             <span className={`badge badge-xs badge-warning mb-4 w-14 h-6 items-center rounded-full text-[10px] ${item.tagType === "bestseller"
-                                    ? "bg-[#FEF3C6] text-[#BBA400] border-none"
-                                    : item.tagType === "new"
-                                        ? "bg-[#DBFCE7] text-[#0A883E] border-none"
-                                        : item.tagType === "popular"
-                                            ? "bg-[#E1E7FF] text-[#4F39F6] border-none"
-                                            : ""
+                                ? "bg-[#FEF3C6] text-[#BBA400] border-none"
+                                : item.tagType === "new"
+                                    ? "bg-[#DBFCE7] text-[#0A883E] border-none"
+                                    : item.tagType === "popular"
+                                        ? "bg-[#E1E7FF] text-[#4F39F6] border-none"
+                                        : ""
                                 } `}>{item.tagType}
 
                             </span>
@@ -47,7 +47,7 @@ const CardShow = ({ item, cartDeatils, setCartDeatils }) => {
                         </li>))}
                     </ul>
                     <div className="mt-6">
-                        <button onClick={handelClick} className="btn btn-primary btn-block  bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 rounded-full ">{byNow ? "Cart Added" : "Buy Now"}</button>
+                        <button onClick={handelClick} className={`btn ${byNow===true ? "bg-green-500" : "bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600"} btn-primary btn-block   rounded-full `}>{byNow ? "Cart Added" : "Buy Now"}</button>
                     </div>
                 </div>
             </div>

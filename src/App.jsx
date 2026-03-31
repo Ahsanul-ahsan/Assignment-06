@@ -8,6 +8,10 @@ import Tools from './Componet/Tools/Tools'
 import Card from './Componet/Card/Card'
 import ShowDeatils from './Componet/ShowDeatils/ShowDeatils'
 import { ToastContainer } from 'react-toastify'
+import GetStep from './Componet/GetStep/GetStep'
+import Simple from './Componet/Simple/Simple'
+import SimpleTitle from './Componet/SimpleTitle/SimpleTitle'
+import Footer from './Componet/Footer/Footer'
 
 
 const DataPromise = async () => {
@@ -42,7 +46,10 @@ function App() {
         activeTab === "Products" ? <Card card={card} cartDeatils={cartDeatils} setCartDeatils={setCartDeatils} ></Card> : <ShowDeatils cartDeatils={cartDeatils} setCartDeatils={setCartDeatils} ></ShowDeatils>
 
       }
-
+    <GetStep></GetStep>
+    <SimpleTitle></SimpleTitle>
+    <Simple></Simple>
+    <Footer></Footer>
 
     </>
   )
