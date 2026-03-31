@@ -12,6 +12,7 @@ import GetStep from './Componet/GetStep/GetStep'
 import Simple from './Componet/Simple/Simple'
 import SimpleTitle from './Componet/SimpleTitle/SimpleTitle'
 import Footer from './Componet/Footer/Footer'
+import Ready from './Componet/Ready/Ready'
 
 
 const DataPromise = async () => {
@@ -49,6 +50,7 @@ function App() {
     <GetStep></GetStep>
     <SimpleTitle></SimpleTitle>
     <Simple></Simple>
+    <Ready></Ready>
     <Footer></Footer>
 
     </>

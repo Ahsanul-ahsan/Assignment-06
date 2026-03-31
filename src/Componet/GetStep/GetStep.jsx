@@ -4,6 +4,7 @@ import suqire from "../../assets/package.png"
 import pailot from "../../assets/rocket.png"
 
 
+
 const GetStep = () => {
     return (
         <section className="bg-gray-100 py-10 mt-10">
@@ -20,7 +21,7 @@ const GetStep = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="relative hover:shadow-2xl transition-all bg-white rounded-2xl shadow-sm border p-10 text-center">
-              <span className="absolute top-4 right-4 bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 text-white text-sm w-8 h-8 rounded-full flex items-center justify-center">
+              <span className="absolute top-2 right-2 bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 text-white text-sm w-8 h-8 rounded-full flex items-center justify-center">
                 01
               </span>
 
@@ -38,7 +39,7 @@ const GetStep = () => {
             </div>
 
             <div className="relative hover:shadow-2xl transition-all bg-white rounded-2xl shadow-sm border p-10 text-center">
-              <span className="absolute top-4 right-4 bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 text-white text-sm w-8 h-8 rounded-full flex items-center justify-center">
+              <span className="absolute top-2 right-2 bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 text-white text-sm w-8 h-8 rounded-full flex items-center justify-center">
                 02
               </span>
 

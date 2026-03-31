@@ -4,7 +4,7 @@ import { FaCheck } from 'react-icons/fa';
 
 const Simple = () => {
     return (
-        <div className="flex flex-wrap justify-center gap-6 p-10  mb-30 mt-10 ">
+        <div className="flex flex-wrap justify-center gap-6 p-10  mb-15 mt-10 ">
             
             <div className="bg-white hover:shadow-xl transition-all border h-105 border-gray-200 p-8 rounded-3xl shadow-sm w-full max-w-[350px]">
                 <h3 className="text-xl font-bold text-gray-800">Starter</h3>
