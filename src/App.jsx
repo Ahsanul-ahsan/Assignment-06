@@ -20,7 +20,7 @@ const card = DataPromise()
 function App() {
   const [activeTab, setActiveTab] = useState("Products")
   const [cartDeatils, setCartDeatils] = useState([])
-  // console.log(cartDeatils)
+  
 
 
 
@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <ToastContainer />
-      <Navbar />
+      <Navbar cartDeatils={cartDeatils} />
       <Banner />
       <Header />
       <Tools />
@@ -36,14 +36,12 @@ function App() {
       {/* Product Button  */}
       <div className="tabs tabs-box justify-center mb-10 bg-transparent">
         <input onClick={() => setActiveTab("Products")} type="radio" name="my_tabs_1" className={`tab w-40 rounded-full ${activeTab === "Products" ? "bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 text-white font-bold" : ""}`} aria-label="Products" defaultChecked />
-        <input onClick={() => setActiveTab("Cart")} type="radio" name="my_tabs_1" className={`tab w-40 rounded-full ${activeTab === "Cart" ? "bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 text-white font-bold" : ""}`} aria-label="Cart" />
+        <input onClick={() => setActiveTab("Cart")} type="radio" name="my_tabs_1" className={`tab w-40 rounded-full ${activeTab === "Cart" ? "bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 text-white font-bold" : ""}`} aria-label={`Cart (${cartDeatils?.length || 0})`} />
       </div>
       {
         activeTab === "Products" ? <Card card={card} cartDeatils={cartDeatils} setCartDeatils={setCartDeatils} ></Card> : <ShowDeatils cartDeatils={cartDeatils} setCartDeatils={setCartDeatils} ></ShowDeatils>
 
       }
-
-
 
 
     </>

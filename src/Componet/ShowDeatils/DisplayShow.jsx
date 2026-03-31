@@ -2,6 +2,11 @@ import React from 'react';
 import { MdDelete } from 'react-icons/md';
 
 const DisplayShow = ({ cart, setCartDeatils }) => {
+    const handelClick = (card) => {
+        const filtter = cart.filter((c) => c.id !== card.id)
+        setCartDeatils(filtter)
+    }
+
 
     return (
         <div className='flex items-center justify-between p-4 mb-4 bg-[#F9FAFC] rounded-2xl '>
@@ -14,7 +19,7 @@ const DisplayShow = ({ cart, setCartDeatils }) => {
             </div>
 
             <div >
-                <button  className='btn text-red-500 font-bold'> <MdDelete /> Remove</button>
+                <button onClick={() => handelClick(cart.id)} className='btn text-red-500 font-bold'> <MdDelete />Remove</button>
             </div>
         </div>
     );

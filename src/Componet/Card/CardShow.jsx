@@ -4,21 +4,15 @@ import { toast } from 'react-toastify';
 
 const CardShow = ({ item, cartDeatils, setCartDeatils }) => {
     const handelClick = () => {
-        setCartDeatils([...cartDeatils,item])
+        setCartDeatils([...cartDeatils, item])
         toast.success("cart add success")
         setByNow(true)
     }
 
-    const [byNow, setByNow]=useState(false)
-
-    const ColorsName = {
-        bestseller: "bg-[#FEF3C6] text-[#BB4D00] border-none",
-        new: "bg-[#DBFCE7] text-[#0A883E] border-none",
-        popular: "bg-[#E1E7FF] text-[#4F39F6] border-none",
-    }
+    const [byNow, setByNow] = useState(false)
 
     return (
-        <div>
+        <div className='mb-20'>
             <div className="card w-96 bg-base-100 shadow-sm">
                 <div className="card-body">
                     <div className="flex justify-between">
@@ -26,7 +20,16 @@ const CardShow = ({ item, cartDeatils, setCartDeatils }) => {
                             <img className='border border-gray-300 p-3 rounded-full' src={item.icon} alt="image" />
                         </div>
                         <div>
-                            <span className={`badge badge-xs badge-warning mb-4 w-14 h-6 items-center rounded-full text-[10px] ${ColorsName[item.tagType] || "badge-ghost"}`}>{item.tagType}</span>
+                            <span className={`badge badge-xs badge-warning mb-4 w-14 h-6 items-center rounded-full text-[10px] ${item.tagType === "bestseller"
+                                    ? "bg-[#FEF3C6] text-[#BBA400] border-none"
+                                    : item.tagType === "new"
+                                        ? "bg-[#DBFCE7] text-[#0A883E] border-none"
+                                        : item.tagType === "popular"
+                                            ? "bg-[#E1E7FF] text-[#4F39F6] border-none"
+                                            : ""
+                                } `}>{item.tagType}
+
+                            </span>
                         </div>
                     </div>
                     <div className="flex justify-between">
@@ -39,7 +42,7 @@ const CardShow = ({ item, cartDeatils, setCartDeatils }) => {
                         </div>
                     </div>
                     <ul className="mt-6 flex flex-col gap-2 text-xs">
-                        {item.features.map((item,i) => (<li key={i}>
+                        {item.features.map((item, i) => (<li key={i}>
                             <span className='flex items-center'><MdOutlineDownloadDone className='size-5 text-green-500' /> {item}</span>
                         </li>))}
                     </ul>
