@@ -6,7 +6,7 @@ import bannerlogo from "../../assets/banner.png"
 const Banner = () => {
     return (
 
-        <div className='max-w-11/12 mx-auto flex justify-center items-center mb-8 mt-15 gap-50'>
+        <div className='max-w-11/12 mx-auto flex flex-col md:flex-row justify-center items-center mb-8 mt-15 gap-10 md:gap-50'>
             <div className=' space-y-2 text-left'>
                 <p className='flex items-center bg-[linear-gradient(88deg,_#4f39f6_0%,_#9514fa_100%)] bg-clip-text text-transparent text-[12px] font-semibold '><img className='h-4 w-4' src={logo} alt="" />New: AI-Powered Tools Available</p>
                 <h1 className='font-bold text-3xl'>Supercharge Your <br /> <span className='bg-[linear-gradient(88deg,_#4f39f6_0%,_#9514fa_100%)] bg-clip-text text-transparent'>Digital Workflow</span> </h1>
@@ -16,7 +16,7 @@ const Banner = () => {
                 </p>
                 <div className='flex gap-4'>
                     <button className="btn btn-primary bg-[linear-gradient(88deg,_#4f39f6_0%,_#9514fa_100%)] text-white rounded-3xl">Explore Products</button>
-                    <button className="btn btn-primary  bg-[linear-gradient(88deg,_#4f39f6_0%,_#9514fa_100%)]  rounded-3xl bg-[linear-gradient(88deg,_#4f39f6_0%,_#9514fa_100%)] bg-clip-text text-transparent"><img className='h-4 w-4 ' src={playLogo} alt="" /> Watch Demo</button>
+                    <button className="btn btn-primary bg-[linear-gradient(88deg,_#4f39f6_0%,_#9514fa_100%)] rounded-3xl bg-[linear-gradient(88deg,_#4f39f6_0%,_#9514fa_100%)] bg-clip-text text-transparent"><img className='h-4 w-4 ' src={playLogo} alt="" /> Watch Demo</button>
 
                 </div>
 
