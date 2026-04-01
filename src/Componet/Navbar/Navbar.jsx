@@ -6,7 +6,7 @@ import ShopingImage from "../../assets/shopping-cart.png"
 const Navbar = ({cartDeatils}) => {
     return (
         <nav className="max-w-11/12 mx-auto md:flex items-center justify-between px-8 py-5 border-b border-gray-100 bg-white">
-            <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 bg-clip-text text-transparent">
+            <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 bg-clip-text text-transparent mb-4 md:mb-0">
                 DigiTools
             </div>
 
