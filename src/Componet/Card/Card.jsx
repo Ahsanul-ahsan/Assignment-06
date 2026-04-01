@@ -3,7 +3,7 @@ import CardShow from './CardShow';
 
 const Card = ({ card, cartDeatils, setCartDeatils }) => {
     const cards = use(card)
-    //    console.log(cards)
+    
     return (
         <div className='max-w-11/12 mx-auto grid md:grid-cols-3 gap-5'>
             {
